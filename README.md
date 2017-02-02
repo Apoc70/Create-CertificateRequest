@@ -19,28 +19,28 @@ The content of the certificate request file is the CSR to be submitted to a Cert
 * Exchange Server 2013/2016 Management Shell
 
 ##Inputs
-# InfTemplateFile
+### InfTemplateFile
 Filename of a local .inf file template, default: Default-Template.inf
 
-# CreateRequest
+### CreateRequest
 Switch to create the certificate request in the local computer certificate store. If not used only a new inf file will be created. 
 
-# Country
+### Country
 Certificate DN attribute for Country (C)
 
-# City
+### City
 Certificate DN attribute for Country (S)
 
-# State
+### State
 Certificate DN attribute for Country (L)
 
-# Organisation
+### Organisation
 Certificate DN attribute for Country (O)
 
-# Department
+### Department
 Certificate DN attribute for Country (OU)
 
-# ModernExchangeOnly
+### ModernExchangeOnly
 Switch to query Exchange 2013+ only. If not used, all Exchange Servers will be queried.
 
 ##Outputs
