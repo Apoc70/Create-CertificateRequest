@@ -7,7 +7,7 @@
     THIS CODE IS MADE AVAILABLE AS IS, WITHOUT WARRANTY OF ANY KIND. THE ENTIRE  
     RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS CODE REMAINS WITH THE USER. 
 
-    Version 1.0, 2017-92-02
+    Version 1.0, 2017-02-02
 
     Please send ideas, comments and suggestions to support@granikos.eu 
 
