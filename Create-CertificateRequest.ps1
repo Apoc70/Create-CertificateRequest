@@ -12,7 +12,7 @@
     Please send ideas, comments and suggestions to support@granikos.eu 
 
     .LINK 
-    More information can be found at http://scripts.granikos.eu
+    http://scripts.granikos.eu
 
     .DESCRIPTION 
     The script queries Exchange Server 2013+ virtual directory hostnames to create a certificate request.
@@ -109,7 +109,7 @@ function Update-ProgressBar {
 
   $Steps = 8
 
-  Write-Progress -Id 1 -Activity "Fetching data from $($script:ExchangeServerCount) Exchange Servers" -Status $Status -PercentComplete ((1/$Steps*$Step*100))
+  Write-Progress -Id 1 -Activity ('Fetching data from {0} Exchange Servers' -f ($script:ExchangeServerCount)) -Status $Status -PercentComplete ((1/$Steps*$Step*100))
 }
 
 <#

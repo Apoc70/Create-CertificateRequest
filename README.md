@@ -1,7 +1,7 @@
 # Create-CertificateRequest.ps1
 This script creates a new certificate request based on an inf file template. Hostnames used are gathered from Exchange virtual directory configurations.
 
-##Description
+## Description
 The script queries Exchange Server 2013+ virtual directory hostnames to create a certificate request.
     
 The request is created using an inf file template. You can prepare multiple template files to choose from. 
@@ -18,7 +18,7 @@ The content of the certificate request file is the CSR to be submitted to a Cert
 * Windows Server 2012 R2  
 * Exchange Server 2013/2016 Management Shell
 
-##Inputs
+## Parameters
 ### InfTemplateFile
 Filename of a local .inf file template, default: Default-Template.inf
 
@@ -43,11 +43,11 @@ Certificate DN attribute for Country (OU)
 ### ModernExchangeOnly
 Switch to query Exchange 2013+ only. If not used, all Exchange Servers will be queried.
 
-##Outputs
+## Outputs
 * The script creates an inf file which can be used as input for certreq.exe
 * If selected, the script creates a certificate request using the local computers certificate store and save the certificate request (CSR) to disk.
 
-##Examples
+## Examples
 ```
 .\Create-CertificateRequest.ps1 -ModernExchangeOnly -Country DE -State NW -City Hueckelhoven -Organisation Varuna -Department IT
 ```
@@ -62,15 +62,14 @@ Create a new certificate request for Exchange 2013+ using the common name only. 
 THIS CODE IS MADE AVAILABLE AS IS, WITHOUT WARRANTY OF ANY KIND. THE ENTIRE  
 RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS CODE REMAINS WITH THE USER.
 
-##TechNet Gallery
+## TechNet Gallery
 Find the script at TechNet Gallery
 * https://gallery.technet.microsoft.com/Create-Exchange-internalext-8784bfb1
 
-
-##Credits
+## Credits
 Written by: Thomas Stensitzki
 
-Stay connected:
+## Social
 
 * My Blog: http://justcantgetenough.granikos.eu
 * Twitter: https://twitter.com/stensitzki
